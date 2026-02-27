@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENITH | The Peak of Performance</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Luckiest+Guy&display=swap');
+
+        :root {
+            --bg: #000000;
+            --card-bg: #0a0a0a;
+            --border: #1a1a1a;
+            --gray: #888888;
+        }
+
+        html { scroll-behavior: smooth; }
+        body { background-color: var(--bg); color: white; font-family: 'Inter', sans-serif; margin: 0; }
+
+        /* Nav Bar */
+        nav { display: flex; justify-content: center; padding: 25px 0; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        .nav-pill {
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(12px);
+            padding: 10px 30px;
+            border-radius: 100px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            border: 1px solid var(--border);
+        }
+        .nav-brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: white; }
+        .z-logo { font-family: 'Luckiest Guy'; font-size: 1.8rem; background: white; color: black; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; border-radius: 8px; }
+        .nav-links a { color: var(--gray); text-decoration: none; font-size: 0.85rem; transition: 0.3s; }
+        .nav-links a:hover { color: white; }
+
+        /* Sections */
+        section { padding: 160px 20px 80px 20px; max-width: 1000px; margin: 0 auto; min-height: 90vh; }
+        
+        .hero { text-align: center; }
+        h1 { font-size: clamp(3rem, 10vw, 5.5rem); margin: 0; font-weight: 700; background: linear-gradient(to bottom, #fff 40%, #444 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: var(--gray); font-size: 1.2rem; margin: 25px 0; max-width: 700px; line-height: 1.6; }
+
+        /* Card Styles */
+        .card-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; margin-top: 50px; }
+        .card { background: var(--card-bg); border: 1px solid var(--border); padding: 35px; border-radius: 20px; transition: 0.3s; }
+        .card:hover { border-color: #333; transform: translateY(-5px); }
+        .card h3 { margin: 0 0 10px 0; font-size: 1.2rem; }
+        .card p { color: var(--gray); font-size: 0.95rem; margin: 0; }
+        .stat-val { float: right; color: white; font-weight: 700; }
+
+        /* Executor Section */
+        .exec-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 40px; }
+        .exec-item { background: #111; border: 1px solid var(--border); padding: 15px 30px; border-radius: 12px; font-weight: 600; font-size: 0.9rem; color: #ccc; }
+
+        /* Loadstring */
+        .code-container { background: #000; padding: 25px; border-radius: 15px; border: 1px solid #222; margin: 30px 0; cursor: pointer; text-align: center; }
+        code { font-family: monospace; color: #888; font-size: 0.85rem; }
+
+        .btn-discord { background: white; color: black; padding: 14px 40px; border-radius: 10px; text-decoration: none; font-weight: 700; display: inline-block; transition: 0.3s; }
+        .btn-discord:hover { transform: scale(1.05); }
+
+        footer { text-align: center; padding: 100px 0 50px 0; color: #222; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-pill">
+            <a href="#home" class="nav-brand"><div class="z-logo">Z</div> <div style="font-weight: 700;">ZENITH</div></a>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#executors">Executors</a>
+                <a href="#get">Loadstring</a>
+            </div>
+            <a href="https://discord.gg/E3ghGN9g" style="color:white; text-decoration:none; font-weight:600; font-size:0.85rem;">Join Discord</a>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div style="border: 1px solid #00ff64; color: #00ff64; padding: 5px 15px; border-radius: 50px; font-size: 0.7rem; font-weight: 700; display: inline-block; margin-bottom: 20px;">🟢 UNDETECTED</div>
+        <h1>Z3NITH V2</h1>
+        <p class="subtitle">Experience the peak of Arsenal scripts. Optimized for speed, reliability, and total dominance.</p>
+    </section>
+
+    <section id="about">
+        <h2 style="text-align: center; font-size: 2.5rem;">Why Zenith?</h2>
+        <div class="card-grid">
+            <div class="card">
+                <h3>Execution Speed <span class="stat-val">Instant</span></h3>
+                <p>No more waiting. Zenith executes scripts with zero latency for immediate response.</p>
+            </div>
+            <div class="card">
+                <h3>Performance <span class="stat-val">99.9%</span></h3>
+                <p>Highly optimized code ensures your FPS stays high even during heavy combat.</p>
+            </div>
+            <div class="card">
+                <h3>Reliability <span class="stat-val">100%</span></h3>
+                <p>Stable execution and daily bypass updates keep you in the game longer.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="executors" style="text-align: center;">
+        <h2>Supported Executors</h2>
+        <p style="color: var(--gray);">Zenith is verified and optimized for all major platforms.</p>
+        <div class="exec-grid">
+            <div class="exec-item">Wave</div>
+            <div class="exec-item">Solara</div>
+            <div class="exec-item">Swift</div>
+            <div class="exec-item">Celery</div>
+            <div class="exec-item">Synapse Z</div>
+            <div class="exec-item">Fluxus</div>
+        </div>
+    </section>
+
+    <section id="get" style="text-align: center;">
+        <div style="background: var(--card-bg); padding: 60px; border-radius: 30px; border: 1px solid var(--border);">
+            <h2>Get Started</h2>
+            <div class="code-container" id="copyBtn">
+                <code>loadstring(game:HttpGet("https://gist.githubusercontent.com/kron692/e6c13884b22c5c14ea3fae9d699cd5a0/raw/6222d963f8a7c5687e9c8a27157430b9bffee1e5/gistfile1.txt"))()</code>
+            </div>
+            <a href="https://discord.gg/E3ghGN9g" class="btn-discord">Access Community</a>
+        </div>
+    </section>
+
+    <footer>ZENITH © 2026 | CREEDSS TO ZXN</footer>
+
+    <script>
+        document.getElementById('copyBtn').addEventListener('click', function() {
+            const code = this.querySelector('code').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                const original = this.innerHTML;
+                this.innerHTML = "<code style='color: #00ff64;'>COPIED TO CLIPBOARD!</code>";
+                setTimeout(() => { this.innerHTML = original; }, 2000);
+            });
+        });
+    </script>
+</body>
+</html>
